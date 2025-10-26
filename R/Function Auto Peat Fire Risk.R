@@ -1,4 +1,4 @@
- autopeatfr <- function(WT, SM, Rf, Temp, imputation = c("knn", "spline", "linear", "loess"), model= "ARIMA", look_back=12, layer_units=c(32, 32), epochs=100, h = 4, R0 = 3000, dt = 1) {
+ autopeatfr <- function(WT, SM, Rf, Temp, imputation = c("knn", "spline", "linear", "loess"), model= c("arima", "lstm", "gru"), look_back=12, layer_units=c(32, 32), epochs=100, h = 4, R0 = 3000, dt = 1) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     install.packages("ggplot2")
   }
@@ -123,4 +123,5 @@
     cat(sprintf("PFVI-%d: %f (%s)\n", length(PFVI) - h + i, last_PFVI[i], PFVI_labels[i]))}
 
   PFVI_results$plot
+
 }
