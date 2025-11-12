@@ -1,4 +1,4 @@
-# Peat Fire Risk (peatfr) Package 🌟
+# Peat Fire Risk (peatfr) Package 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 The peat fire risk package or peatfr package provide comprehensive framework to forecast tropical peatland fire through stochastics, machine learning, and optimisation  methods. The peatfr consists of three main functions, including, data imputation process, time series forecasting, and drought fire index calculation. This package provides four imputation methods, which can be employed to estimate the missing values of time series data of water table, soil moisture, rainfall, and air temperature. The forecasting process employs the ARIMA stochastic model with Box-Cox transformation, the Long Short-Term Memory (LSTM) method, and the Gated Recurrent Unit (GRU) method. The drought fire index is calculated through Peat Fire Vulnerability Index with Nelder-Mead optimisation to obtain the best parameters automatically.
